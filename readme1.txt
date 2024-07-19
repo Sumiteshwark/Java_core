@@ -30,7 +30,7 @@
 
 => Access Spesifiers(public, private, protected, default)
 
-=> Constructor - default and parameterized Constructor. Example is in lec1(l1_constructor)
+=> Constructor - default and parameterized Constructor. It executes when object is created. Example is in lec1(l1_constructor)
 => Destructure - There is no Destructure in Java because there is Garbage Collector which deletes the non-referenced instance by itself.
 
 => Package in Java - For package go to lec-2 folder.
@@ -45,5 +45,10 @@
 => polymorphism
 => Overloading (Compile time polymorphism) - Overloading occurs when two or more methods in the same class have the same name but different parameters. Details are in l3_function_overloading.java.
 => Overriding (Run time polymorphism) - Method overriding is the act of declaring a method in a subclass that is already present in a parent class.Details are in l3_function_overriding.java.
+
+=> Abstract class
+=> We cannot make object of abstract class. But can make object of child class of this class.
+=> If we write abstract before function, then we cannot define anything inside that function. Ex- abstract void f1();
+
 
 => In interface by default every member is public, static and final.
