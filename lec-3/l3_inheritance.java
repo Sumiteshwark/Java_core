@@ -1,6 +1,7 @@
 // Time = 01:09:30 to 02:37:00    and from (02:37:00 to 3:20:00 lecture is repeated)
 
 // => Three types of inheritance(single, multilevel, hierarchical)
+// => Multiple inheritance is not in java because let if same function is defined in two or more than two parent classes, this will cause ambiguity that which function to be called. But multiple inheritance is possible in java using interface.
 // => Parent class is also called Super or Base class.
 // => Child class is also called Sub or Derived class.
 // => extends keyword is used to inherit from parent class.
