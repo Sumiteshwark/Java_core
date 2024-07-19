@@ -47,8 +47,16 @@
 => Overriding (Run time polymorphism) - Method overriding is the act of declaring a method in a subclass that is already present in a parent class.Details are in l3_function_overriding.java.
 
 => Abstract class
-=> We cannot make object of abstract class. But can make object of child class of this class.
-=> If we write abstract before function, then we cannot define anything inside that function. Ex- abstract void f1();
+// => We cannot make object of abstract class. But can make object of child class of this class.
+// => If we write abstract before function, then we cannot define anything inside that function. Ex- abstract void f1();
+// => If we define abstract keyword inside the class then we must have to define that class abstract.
+// => If we call the abstract function in the child class, then we also have to make child class abstract. So, to prevent this we use overriding, means we can define the same function in child class.So, from this we can make object of child class.
+// => We can make constructor in abstract class. Aulthough constructor executes at the time of object creation. But we cannot make object of abstract class. But we can make object of child class of this class at that time super() is called default and the constructor of parent or abstract class is called.
+=> For more go to l4_abstract_class.java
 
-
-=> In interface by default every member is public, static and final.
+=> Interface
+=> We cannot make object of interface also.
+=> In interface by default every member(like int x;) is public, static and final. And every function(also called method) is by default public and abstract.
+=> we cannot define anything inside function in interface. Ex- void f1(); But we can define using static keyword after Java-8.. Ex- static void f2(){int x;}.
+=> Can achieve multiple Inheritance by interface.
+=> For more go to l5_interface_class.java
