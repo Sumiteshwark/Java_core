@@ -55,8 +55,13 @@
 => For more go to l4_abstract_class.java
 
 => Interface
-=> We cannot make object of interface also.
-=> In interface by default every member(like int x;) is public, static and final. And every function(also called method) is by default public and abstract.
-=> we cannot define anything inside function in interface. Ex- void f1(); But we can define using static keyword after Java-8.. Ex- static void f2(){int x;}.
-=> Can achieve multiple Inheritance by interface.
+// => We cannot make object of interface also.
+// => In interface by default every member(like int x;) is public, static and final. And every function(also called method) is by default public and abstract.
+// => we cannot define anything inside function in interface. Ex- void f1(); But we can define using static keyword after Java-8. Ex- static void f2(){int x;}.
+// => implements keyword is used to implement interface in class. extends keyword is used in class to class and interface to interface.
+// => We cannot make constructor in interface because members are by default final. So, If we cannot able to initialize the data so constructor is not used.
+// => We cannot create object of interface. But we can create reference of interface to the class.
+// => Multiple inheritance is not in java because let if same function is defined in two or more than two parent classes, this will cause ambiguity that which function to be called. But multiple inheritance is possible in java using interface.
+// => static method or function in interface cannot be called using object of class which implements that interface. But we can only call using interface name.
+// => So if same method is in two or more interface and implemented in a same class then in that class only we have to define the function because method in interface is by default abstract(and if static keyword is used then this is not implementd in that class, can only be access by interface name).
 => For more go to l5_interface_class.java

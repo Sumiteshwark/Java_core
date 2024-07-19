@@ -4,6 +4,8 @@
 // => implements keyword is used to implement interface in class. extends keyword is used in class to class and interface to interface.
 // => We cannot make constructor in interface because members are by default final. So, If we cannot able to initialize the data so constructor is not used.
 
+// => We cannot create object of interface. But we can create reference of interface to the class.
+
 // => Multiple inheritance is not in java because let if same function is defined in two or more than two parent classes, this will cause ambiguity that which function to be called. But multiple inheritance is possible in java using interface.
 // => static method or function in interface cannot be called using object of class which implements that interface. But we can only call using interface name.
 // => So if same method is in two or more interface and implemented in a same class then in that class only we have to define the function because method in interface is by default abstract(and if static keyword is used then this is not implementd in that class, can only be access by interface name).
@@ -48,31 +50,63 @@
 
 
 
-// => Multiple inheritance is not in java because let if same function is defined in two or more than two parent classes, this will cause ambiguity that which function to be called. But multiple inheritance is possible in java using interface.
-// => static method or function in interface cannot be called using object of class which implements that interface. But we can only call using interface name.
-// => So if same method is in two or more interface and implemented in a same class then in that class only we have to define the function because method in interface is by default abstract(and if static keyword is used then this is not implementd in that class, can only be access by interface name).
 interface demo1{
-    void common();
-    static void common1(){
-        System.out.println("static common1 can only be called using interface name");
+    int x=10; 
+    void f1(); 
+    static void f2(){   
+        System.out.println("f2 in demo1");
     }
 }
-interface demo2{
-    void common();
-    static void common2(){
-        System.out.println("static common2 can only be called using interface name");
+class demo2 implements demo1{
+    public void f1(){ 
+        System.out.println("f1 in demo2 which is defined in demo1");
     }
-}
-class demo3 implements demo1, demo2{
-    public void common(){
-        System.out.println("common to implement multiple interface");
+    public void f3(){ 
+        System.out.println("f3 in demo2");
     }
 }
 public class l5_interface_class {
     public static void main(String[] args) {
-        demo3 obj = new demo3();
-        obj.common();
-        demo1.common1();
-        demo2.common2();
+        demo1 d =new demo2(); //We cannot create object of interface. But we can create reference of interface to the class.
+        d.f1();  //Can only access the member and method of demo1.
+        // d.f3(); //Cannot access the member and method of class demo2.
     }
 }
+
+
+
+
+
+
+
+
+
+
+// => Multiple inheritance is not in java because let if same function is defined in two or more than two parent classes, this will cause ambiguity that which function to be called. But multiple inheritance is possible in java using interface.
+// => static method or function in interface cannot be called using object of class which implements that interface. But we can only call using interface name.
+// => So if same method is in two or more interface and implemented in a same class then in that class only we have to define the function because method in interface is by default abstract(and if static keyword is used then this is not implementd in that class, can only be access by interface name).
+// interface demo1{
+//     void common();
+//     static void common1(){
+//         System.out.println("static common1 can only be called using interface name");
+//     }
+// }
+// interface demo2{
+//     void common();
+//     static void common2(){
+//         System.out.println("static common2 can only be called using interface name");
+//     }
+// }
+// class demo3 implements demo1, demo2{
+//     public void common(){
+//         System.out.println("common to implement multiple interface");
+//     }
+// }
+// public class l5_interface_class {
+//     public static void main(String[] args) {
+//         demo3 obj = new demo3();
+//         obj.common();
+//         demo1.common1();
+//         demo2.common2();
+//     }
+// }
