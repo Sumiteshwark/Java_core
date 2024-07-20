@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class display{
     //For 1D Array
     public void show(int arr[]){
@@ -5,16 +7,21 @@ class display{
         for(int i=0;i<size;i++){ 
             System.out.print(arr[i] + " ");
         }
+
         ////This loop is same as above for loop.
         // for(int it:arr){
         //     System.out.print(it + " ");
         // }
+
         System.out.print("\n");
         // System.out.println(); //Same work as above line
+
+        ////To print arrary using toString()
+        //System.out.println(Arrays.toString(arr))
     }
 
 
-    //For multi-dimensional Array
+    //For multi-dimensional Array or Jagged Array
     public void show(int arr[][]){
         // for(int i=0;i<2;i++){
         //     for(int j=0;j<3;j++){
@@ -22,6 +29,7 @@ class display{
         //     }
         //     System.out.print("\n");
         // }
+
         ////This loop is same as above for loop.
         for(int n[]:arr){
             for(int m:n){
@@ -29,6 +37,9 @@ class display{
             }
             System.out.println();
         }
+
+        ////To print two dimensional arrary using deepToString()
+        //System.out.println(Arrays.deepToString(arr))
     }
 }
 
@@ -52,6 +63,16 @@ public class l3_array {
         nums1[1]=5;
         System.out.print("nums1: ");
         dd.show(nums1);
+
+        //Use of sort(), copyOf() and equals() static methods of Arrays class
+        int[] arr = {3,5,2,1};
+        int[] arr1 = {1,3,5,2,1,6};
+        // Arrays.sort(arr);
+        System.err.println(Arrays.toString(arr)); //To print one dimensional array
+        int[] arr3 = Arrays.copyOf(arr1, 3);//To copy one dimensional array, here 3 is length
+        System.err.println(Arrays.toString(arr3)); //To print one dimensional array
+        System.out.println(Arrays.equals(arr, arr1)); //To check equality of two arrays
+        System.err.println(Arrays.equals(arr,0,2,arr1,1,3)); //To check equality of two arrays using start index and end index
         
         //Multidimensional Array
         int nums2[][]=new int[2][3];

@@ -25,5 +25,13 @@ public class l1_datatypes {
         float num6=12.6f;
         double d=num6;
         System.out.println(d);
+
+
+
+        int orgnum=7;
+        int check1=orgnum/3;
+        double check2=orgnum/3;
+        double check3=orgnum/3.0;
+        System.out.printf("%d %d %.2f %.3f",orgnum,check1,check2,check3);
     }
 }
