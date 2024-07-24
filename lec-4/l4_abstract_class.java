@@ -46,9 +46,14 @@ class Demo2 extends Demo1{
         // super(); //By default there is super() implemented in child class when we create object. No need to write manually
         System.out.println("This is constructor of child class.");
     }
+
+    void fun2() {
+        System.out.println("This is function of child class.");
+    }
 }
 public class l4_abstract_class {
     public static void main(String[] args) {
         Demo2 obj = new Demo2(); //We can make object of child class of this class at that time super() is called default and the constructor of parent or abstract class is called then constructor of child class is called.
+        obj.fun2();
     }
 }
