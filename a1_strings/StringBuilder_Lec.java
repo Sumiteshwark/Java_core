@@ -3,7 +3,7 @@
 // => StringBuilder is mutable and non-syncorized.
 
 
-package strings.string;
+package a1_strings;
 public class StringBuilder_Lec {
     public static void main(String[] args) {
 

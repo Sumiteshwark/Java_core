@@ -1,7 +1,7 @@
 //String is immutable.
 
 
-package strings.string;
+package a1_strings;
 public class String_Lec{
     public static void main(String[] args) {
         String class1 = new String("Class"); // This creates new object in heap memory and also stores the value in string constant pool/string literal pool.

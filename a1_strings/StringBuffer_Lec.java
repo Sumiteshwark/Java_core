@@ -2,7 +2,7 @@
 // => StringBuffer is mutable and syncorized.
 
 
-package strings.string;
+package a1_strings;
 public class StringBuffer_Lec {
     public static void main(String[] args) {
 
