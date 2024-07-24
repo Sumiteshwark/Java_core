@@ -65,3 +65,9 @@
 // => static method or function in interface cannot be called using object of class which implements that interface. But we can only call using interface name.
 // => So if same method is in two or more interface and implemented in a same class then in that class only we have to define the function because method in interface is by default abstract(and if static keyword is used then this is not implementd in that class, can only be access by interface name).
 => For more go to l5_interface_class.java
+
+
+=> String vs StringBuffer vs StringBuilder
+// => String is immutable.
+// => StringBuffer is mutable and syncorized.
+// => StringBuilder is mutable and non-syncorized.
