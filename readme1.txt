@@ -7,7 +7,7 @@
 => Ex -  folder1/folder2/file.java (So in file we have to define (package folder1/folder2;))
 => So to compile and run we have to be in root directory in which folder1 is kept and to compile (javac folder1/folder2/file.java) and to run (java folder1/folder2/file)
 
-=> Java Bitwise operator = |(or), &(and), ^(xor), >>(rightshift), <<(leftshift)
+=> Java Bitwise operator = |(or), &(and), ^(xor), ~(complement), >>(rightshift), <<(leftshift)
 
 => James Gosling (Written in 1891 and launched in 1896)
 => Features - Plateform Independent, Multithreading, Garbage Collector, Secure, Robust(Can do every thing)
